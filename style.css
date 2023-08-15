@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400&display=swap');
+
+:root {
+    --primary_color: #f2726a;
+    --back_color: #242628;
+    --gradient_color: linear-gradient(to right, #159557, #75c666);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--gradient_color);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    background: var(--back_color);
+    width: 70%;
+    height: 90%;
+    border-radius: 10px;
+    display: flex;
+    color: white;
+    overflow: hidden;
+}
+
+.info_left {
+    width: 32%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card_img {
+    width: 130px;
+    height: 130px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid var(--primary_color);
+    margin: 0 auto;
+    transition: 0.5s;
+    transition-delay: 0.2s;
+}
+
+.card_img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card_img:hover {
+    transition: unset;
+    transform: scale(1.1);
+}
+
+.card_fullname {
+    margin-top: 30px;
+    color: white;
+    text-align: center;
+}
+
+.card_job {
+    text-align: center;
+    color: var(--primary_color);
+}
+
+.personal_info {
+    margin-top: 25px;
+    color: white;
+}
+
+.personal_info div {
+    display: flex;
+    margin-left: 25px;
+    font-size: 14px;
+}
+
+.personal_info div p {
+    padding: 5px;
+}
+
+.title {
+    width: 100px;
+}
+
+
+.media_contact {
+    margin-top: 25px;
+    color: white;
+}
+
+
+.media_contact a {
+    color: white;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.media_contact a i {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.media_contact a p {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.media_contact a:hover {
+    color: var(--primary_color);
+}
+
+.education {
+    margin-top: 20px;
+}
+
+.school {
+    padding: 5px;
+    margin-left: 12px;
+}
+
+.school_name {
+    font-size: 15px;
+}
+
+.school_duration {
+    font-size: 15px;
+}
+
+.gpa {
+    font-size: 15px;
+}
+
+.info_right {
+    width: 68%;
+    background: white;
+    color: var(--back_color);
+}
+
+.skills {
+    padding: 20px;
+}
+
+.skills ul {
+    padding-left: 30px;
+    font-size: 15px;
+}
